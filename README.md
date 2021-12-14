@@ -2,7 +2,7 @@
 A middle ground guide for experienced users to get from zero to self-custodied cold storage with a focus on security. 
 
 <p align="center">
-  <img width="756" height="441" src="Assets/MiddleGroundTitleImage-M.png">
+  <img width="750" height="406" src="Assets/MiddleGroundTitleImage-M.png">
 </p>
 
 This guide covers:
