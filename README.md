@@ -8,6 +8,6 @@ A middle ground guide for experienced users to get from zero to self-custodied c
 This guide covers:
 - Checking the tamper-evident bag
 - Setting up a PIN
-- Generating a seed phrase with dice rolls
+- Generating a seed phrase with some dice rolls
 - Air-gapped communication between ColdCard and [Sparrow Wallet](https://www.sparrowwallet.com/)
 - Backup recommendations
