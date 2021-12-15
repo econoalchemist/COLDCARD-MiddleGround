@@ -9,5 +9,6 @@ This guide covers:
 - Checking the tamper-evident bag
 - Setting up a PIN
 - Generating a seed phrase with some dice rolls
+- Creating a passphrase
 - Air-gapped communication between ColdCard and [Sparrow Wallet](https://www.sparrowwallet.com/)
 - Backup recommendations
