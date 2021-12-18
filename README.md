@@ -1,5 +1,5 @@
 # ColdCard Middle Ground Guide
-A middle ground guide for experienced users to get started with an air-gapped cold storage wallet. 
+A middle ground guide for intermediate users to get started with a secure air-gapped cold storage wallet and a private desktop wallet. 
 
 <p align="center">
   <img width="750" height="406" src="Assets/MiddleGroundTitleImage-M.png">
@@ -117,28 +117,49 @@ Next, you will be asked to take a test to prove you wrote the words down correct
 After passing the test, you will be at the ColdCard's main menu. Your ColdCard is ready to start receiving deposits, next we'll set it up as a "watch-only" wallet in Sparrow Wallet and demonstrate how to transact in an air-gapped fashion. If you are interested in adding the additional security of a passphrase to your ColdCard wallet, then check out the [Paranoid guide](https://github.com/econoalchemist/ColdCard-Paranoid).
 
 ## Connecting ColdCard to Sparrow Wallet
-Sparrow Wallet is a Bitcoin wallet designed to be connected with your own node and ran from your desktop computer. This is a user-friendly wallet with an intuitive interface and many advanced features for a range of capabilities. To learn more about Sparrow Wallet and for installation instructions, visit the [Sparrow Wallet website](https://www.sparrowwallet.com/).
+Sparrow Wallet is a Bitcoin wallet designed to be connected with your own node and ran from your desktop or laptop computer. This is a user-friendly wallet with an intuitive interface and many advanced features for a range of capabilities. To learn more about Sparrow Wallet and for installation instructions, visit the [Sparrow Wallet website](https://www.sparrowwallet.com/).
 
-In this guide you will see how to connect your ColdCard to Sparrow Wallet using a reputable public Electrum server as the backend. 
+In this guide you will see how to connect your ColdCard to Sparrow Wallet using a your own BitcoinCore node. If you don't have your own Bitcoin node, you can use reputable public Electrum servers as demonstrated in the [UltraQuick guide](https://github.com/econoalchemist/ColdCard-UltraQuick). However, there are privacy tradeoffs that come with using the convenience of a public Electrum server. Luckily there are a number of resources avilable to help you spin up your own Bitcoin node, to learn more check out:
 
-Once you install Sparrow Wallet and launch the application, you will be presented with an empty user interface. Navigate to "File>Preferences".
+- [Bitcoin.org](https://bitcoin.org/en/bitcoin-core/)
+- [Ministry of Nodes](https://www.ministryofnodes.com.au/) 
+- [Soarrow Wallet Documentation](https://www.sparrowwallet.com/docs/connect-node.html)  
+
+Once you have your BitcoinCore node ready, there are a couple steps needed to configure it to work with Sparrow Wallet. 
+
+If you have BitcoinCore running on the same computer as Sparrow Wallet, then all you need to do is open the `bitcoin.conf` configuration file and add `server=1` near the top and save it. Then re-launch BitcoinCore.  
+
+Alternatively, if you are running BircoinCore on a remote computer, you need to add a username & password and the Remote Procedure Calls (RPC) binding local IP addresses in the configuration file. To do this, navigate to the `bitcoin.conf` configuration file and open it. Then add the local IP address for your node and the local IP address for your desktop. For example:
+
+`rpcuser=pi
+rpcpassword=Nakamoto21
+rpcbind=127.0.0.1
+rpcbind=192.168.0.11 #(your node)
+rpcallowip=127.0.0.1
+rpcallowip=192.168.0.12 #(desktop)'
+
+<p align="center">
+  <img width="805" height="503" src="Assets/RPC.png">
+</p>
+
+Save those changes and then you should be able to conect to your BircoinCore node from your computer on the same local network. Make sure you restart BitcoinCore after saving those changes. 
+
+Now you are ready to configure Sparrow Wallet to talk to your BitcoinCore node. Once you have Sparrow Wallet installed and launched, you will be presented with an empty user interface. Navigate to "File>Preferences".
 
 <p align="center">
   <img width="814" height="611" src="Assets/Sparrow0.png">
 </p>
 
-Then click on the "Server" tab on the left-hand side. Select "Public Server" at the top, choose a public server from the drop down menu, then click on "Test Connection". It should only take a moment for a sucessful connection to be made. You may have to try a couple different public servers to get a good connection. 
+Then click on the "Server" tab on the left-hand side. If running BitcoinCore on the same computer, use the `127.0.0.1` rpcbind IP address with `8332` as the port. Or if running BitcoinCore on a different computer, and use the same User/Pass that you entered in the `bitcoin.conf` file. Test the network connection from Sparrow Wallet. If it’s good, you should see the green check mark next to "Test Connection" and some information populated in the dialog box below that. Then select “Create New Wallet”.  
 
 <p align="center">
-  <img width="452" height="339" src="Assets/Sparrow1.png">
-  <img width="452" height="339" src="Assets/Sparrow2.png">
+  <img width="452" height="339" src="Assets/Sparrow20.png">
+  <img width="452" height="339" src="Assets/Sparrow21.png">
 </p>
 
-Keep in mind that with this configuration, you are using a public Electrum server which means that your transactions will broadcast to a public server. This also means you are trusting someone else's node. Your bitcoin is not at risk but this method has a privacy tradeoff that is worth considering. In the [Middle Ground](https://www.github.com/econoalchemist/ColdCard-MiddleGround/) guide, more privacy-focused options are covered. To learn more about Sparrow Wallet best practices, check out [this](https://www.sparrowwallet.com/docs/best-practices.html) guide. 
+Unfortunately, BitcoinCore stores your public keys and balance unencrypted on the computer it is running on. Although your bitcoin are not directly at risk of theft, if this computer is regularly connected to the internet, it is at risk to hackers - which has the potential to make you a target if your balance and geographic location are discovered. To learn more about Sparrow Wallet best practices, check out [this Sparrow Wallet resource](https://www.sparrowwallet.com/docs/best-practices.html) guide. 
 
-You will notice in the Sparrow Wallet interface lower right-hand corner that the color has changed to yellow. This indicates that your wallet is using a public Electrum server as the back end. 
-
-You can create your new wallet by selecting "File>New Wallet", then you will be asked to name this wallet. Name the wallet whatever you want then click on "Create Wallet". 
+You can create your new wallet by selecting "File>New Wallet", then you will be asked to name this wallet. Name the wallet whatever you want then click on "Create Wallet". You will notice in the Sparrow Wallet interface lower right-hand corner that the color has changed to blue. This indicates that your wallet is using your instance of BitcoinCore as the back end.
 
 <p align="center">
   <img width="814" height="611" src="Assets/Sparrow3.png">
