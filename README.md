@@ -131,15 +131,20 @@ If you have BitcoinCore running on the same computer as Sparrow Wallet, then all
 
 Alternatively, if you are running BircoinCore on a remote computer, you need to add a username & password and the Remote Procedure Calls (RPC) binding local IP addresses in the configuration file. To do this, navigate to the `bitcoin.conf` configuration file and open it. Then add the local IP address for your node and the local IP address for your desktop. For example:
 
-`rpcuser=pi
-rpcpassword=Nakamoto21
-rpcbind=127.0.0.1
-rpcbind=192.168.0.11 #(your node)
-rpcallowip=127.0.0.1
-rpcallowip=192.168.0.12 #(desktop)'
+`rpcuser=pi`
+
+`rpcpassword=Nakamoto21`
+
+`rpcbind=127.0.0.1`
+
+`rpcbind=192.168.0.11 #(your node)`
+
+`rpcallowip=127.0.0.1`
+
+`rpcallowip=192.168.0.12 #(desktop)`
 
 <p align="center">
-  <img width="805" height="503" src="Assets/RPC.png">
+  <img width="805" height="503" src="Assets/Sparrow20.png">
 </p>
 
 Save those changes and then you should be able to conect to your BircoinCore node from your computer on the same local network. Make sure you restart BitcoinCore after saving those changes. 
