@@ -9,7 +9,7 @@ This guide covers:
 - Checking the tamper-evident bag
 - Setting up a PIN
 - Generating a seed phrase with some dice rolls
-- Air-gapped communication between ColdCard and [Sparrow Wallet](https://www.sparrowwallet.com/)
+- Air-gapped communication & transactions with [Sparrow Wallet](https://www.sparrowwallet.com/)
 - Backup recommendations
 
 ## Checking the tamper-evident bag:
@@ -228,20 +228,33 @@ Now you can click on the `Receive` tab on the left-hand side of the Sparrow Wall
 
 Now you can secure your ColdCard in a safe place until you want to sign a transaction and spend from it, several addresses will be saved so you can continue depositing to your ColdCard via Sparrow Wallet without having to re-connect it every time. It is best practice to confirm each receiving address on the ColdCard itself and also to only use each address once. 
 
-When you are ready to spend bitcoin from your ColdCard, it is necessary to create a PSBT. To do this, navigate to the `Spend` tab on the left-hand side in Sparrow Wallet. There, you can paste the address you are sending to, add a label, enter an amount to send, and choose a miners fee rate, etc. Once you have everything set, click on `Create Transaction`. On the next screen, click on `Finalize Transaction for signing`. 
+When you are ready to spend bitcoin from your ColdCard air-gapped, it is necessary to create a PSBT. You can deposit bitcoin with your ColdCard disconnected but to spend bitcoin, the ColdCard needs to sign the transaction. Sparrow Wallet is used to build the transaction based on your deposits and the information you entered when constructing the transaction. 
+
+To create a PSBT, navigate to the `Spend` tab on the left-hand side in Sparrow Wallet. There, you can paste the address you are sending to, add a label, enter an amount to send, and choose a miners fee rate, etc. Once you have everything set, click on `Create Transaction`. On the next screen, double check the details then click on `Finalize Transaction for signing`. Then you will be asked what you want to do with the finalized PSBT. In this case, click on `Save Transaction` and Sparrow Wallet will launch the file explorer. Navigate to the microSD card and save the PSBT there. Then safely eject the microSD card.  
 
 <p align="center">
-  <img width="452" height="339" src="Assets/Sparrow31.png">
-  <img width="452" height="339" src="Assets/Sparrow32.png">
+  <img width="315" height="225" src="Assets/Sparrow31.png">
+  <img width="315" height="225" src="Assets/Sparrow32.png">
+  <img width="315" height="225" src="Assets/Sparrow33.png">
   </p>
   
-Next, you will need to sign the transaction using your ColdCard. You can deposit bitcoin with your ColdCard disconnected but to spend bitcoin, the ColdCard needs to sign the transaction. Sparrow Wallet is used to build the transaction based on your deposits and the information you entered when constructing the transaction. Click on the `Save Transaction` button.  
+Insert the microSD card into the ColdCard. If necessary, power on your ColdCard using the ColdPower 9v battery adaptor or USB adaptor. Then enter your ColdCard PIN prefix, verify your anti-phishing words, and enter the PIN suffix. From the main menu choose `Ready to Sign`. Then the details of the PSBT will be displayed and you can confirm that the address and the amount and the miners fee are correct.    
 
 <p align="center">
-  <img width="452" height="339" src="Assets/Sparrow33.png">
-  <img width="452" height="339" src="Assets/Sparrow17.png">
+  <img width="315" height="236" src="Assets/IMG_5831.JPG">
+  <img width="315" height="236" src="Assets/IMG_5839.JPG">
+  <img width="315" height="236" src="Assets/IMG_5847.JPG">
   </p>
+  
+Then hit OK to sign. Once the file is signed it will be saved as a new file to the microSD card. You can then eject the MicroSD card and securely log out of your Cold Card and power it down. 
  
+<p align="center">
+  <img width="630" height=473" src="Assets/IMG_5870.JPG">
+</p>
+
+                                                        
+                                                        
+
 A moment later on the ColdCard, it will ask you to confirm. Hit the "Ok" button (Check Mark) and the ColdCard will sign the transaction and pass the details back to Sparrow Wallet. Then in Sparrow Wallet, click on the "Broadcast Transaction" button to send the signed transaction to the Bitcoin Network. 
 
   <p align="center">
