@@ -127,7 +127,7 @@ In this guide you will see how to connect your ColdCard to Sparrow Wallet using 
 
 Once you have your BitcoinCore node ready, there are a couple steps needed to configure it to work with Sparrow Wallet. 
 
-If you have BitcoinCore running on the same computer as Sparrow Wallet, then all you need to do is open the `bitcoin.conf` configuration file and add `server=1` near the top and save it. Then re-launch BitcoinCore.  
+If you have BitcoinCore running on the same computer as Sparrow Wallet, then all you need to do is open the `bitcoin.conf` configuration file and add `server=1` near the top and save it. Then re-launch BitcoinCore. You may have a blank configuration file if this was a new BitcoinCore install and that is fine.  
 
 Alternatively, if you are running BircoinCore on a remote computer, you need to add a username & password and the Remote Procedure Calls (RPC) binding local IP addresses in the configuration file. To do this, navigate to the `bitcoin.conf` configuration file and open it. Then add the local IP address for your node and the local IP address for your desktop. For example:
 
@@ -155,11 +155,10 @@ Now you are ready to configure Sparrow Wallet to talk to your BitcoinCore node. 
   <img width="814" height="611" src="Assets/Sparrow0.png">
 </p>
 
-Then click on the "Server" tab on the left-hand side. If running BitcoinCore on the same computer, use the `127.0.0.1` rpcbind IP address with `8332` as the port. Or if running BitcoinCore on a different computer, and use the same User/Pass that you entered in the `bitcoin.conf` file. Test the network connection from Sparrow Wallet. If it’s good, you should see the green check mark next to "Test Connection" and some information populated in the dialog box below that. Then select “Create New Wallet”.  
+Then click on the "Server" tab on the left-hand side. If running BitcoinCore on the same computer, use the `127.0.0.1` rpcbind IP address with `8332` as the port. Or if running BitcoinCore on a different computer, and use the same User/Pass that you entered in the `bitcoin.conf` file. Set the Data Folder directory to the same folder the bitcoin.conf file is being written. This should be the same directory that BitcoinCore writes the `.cookie` file that Sparrow Wallet needs to read. Test the network connection from Sparrow Wallet. If it’s good, you should see the green check mark next to "Test Connection" and some information populated in the dialog box below that. Then select “Create New Wallet”.  
 
 <p align="center">
-  <img width="452" height="339" src="Assets/Sparrow20.png">
-  <img width="452" height="339" src="Assets/Sparrow21.png">
+  <img width="752" height="662" src="Assets/Sparrow21.png">
 </p>
 
 Unfortunately, BitcoinCore stores your public keys and balance unencrypted on the computer it is running on. Although your bitcoin are not directly at risk of theft, if this computer is regularly connected to the internet, it is at risk to hackers - which has the potential to make you a target if your balance and geographic location are discovered. To learn more about Sparrow Wallet best practices, check out [this Sparrow Wallet resource](https://www.sparrowwallet.com/docs/best-practices.html) guide. 
