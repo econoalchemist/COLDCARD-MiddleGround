@@ -63,7 +63,7 @@ First, select "Choose PIN Code", then you will see a brief description of how th
   <img width="605" height="454" src="Assets/Choose PIN.jpg">
 </p>
 
-After hitting "OK" you will get one more warning about the risk of losing or forgetting your PIN. After reading that, you can enter your PIN prefix. Use the included notecard to write down your PIN prefix then hit "OK". 
+After hitting `OK` you will get one more warning about the risk of losing or forgetting your PIN. After reading that, you can enter your PIN prefix. Use the included notecard to write down your PIN prefix then hit `OK`. 
 
 <p align="center">
   <img width="454" height="341" src="Assets/EnterPreFix.jpg">
@@ -76,7 +76,7 @@ Next you will be presented with your two anti-phishing words. Write these down o
   <img width="605" height="454" src="Assets/AntiPhishingWords.jpg">
 </p>
 
-Next, enter your PIN suffix, then write it down on the notecard and hit "OK".
+Next, enter your PIN suffix, then write it down on the notecard and hit `OK`.
 
 <p align="center">
   <img width="454" height="341" src="Assets/EnterSuffix.jpg">
@@ -144,7 +144,7 @@ Alternatively, if you are running BircoinCore on a remote computer, you need to 
 `rpcallowip=192.168.0.12 #(desktop)`
 
 <p align="center">
-  <img width="805" height="503" src="Assets/Sparrow20.png">
+  <img width="605" height="378" src="Assets/Sparrow20.png">
 </p>
 
 Save those changes and then you should be able to conect to your BircoinCore node from your computer on the same local network. Make sure you restart BitcoinCore after saving those changes. 
@@ -226,9 +226,9 @@ Now you can click on the `Receive` tab on the left-hand side of the Sparrow Wall
   <img width="950" height="399" src="Assets/Sparrow30.png">
   </p>
 
-You can disconnect the ColdCard from the computer and when you open the wallet in Sparrow Wallet in the future, several addresses will be saved so you can continue depositing to your ColdCard without having to re-connect it every time. It is best practice to confirm each receiving address on the ColdCard itself and also to only use each address once. 
+Now you can secure your ColdCard in a safe place until you want to sign a transaction and spend from it, several addresses will be saved so you can continue depositing to your ColdCard via Sparrow Wallet without having to re-connect it every time. It is best practice to confirm each receiving address on the ColdCard itself and also to only use each address once. 
 
-When you are ready to spend bitcoin from your ColdCard, navigate to the "Spend" tab on the left-hand side in Sparrow Wallet. There, you can paste the address you are sending to, add a label, enter an amount to send, and choose a miners fee rate, etc. Once you have everything set, click on "Create Transaction". On the next screen, click on "Finalize Transaction for signing". 
+When you are ready to spend bitcoin from your ColdCard, it is necessary to create a PSBT. To do this, navigate to the "Spend" tab on the left-hand side in Sparrow Wallet. There, you can paste the address you are sending to, add a label, enter an amount to send, and choose a miners fee rate, etc. Once you have everything set, click on "Create Transaction". On the next screen, click on "Finalize Transaction for signing". 
 
 <p align="center">
   <img width="452" height="339" src="Assets/Sparrow14.png">
