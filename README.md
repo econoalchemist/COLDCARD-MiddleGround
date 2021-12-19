@@ -218,7 +218,7 @@ After clicking on `Apply`, you will have the opportunity to add a password to yo
 
 After applying the changes, you can now navigate through your watch-only wallet in Sparrow Wallet. On the left-hand side of the Sparrow Wallet interface there are six tabs. The `Transactions` tab is where you can see information related to the transactions in this watch-only wallet. The `Send` tab is where you can create the PSBTs to then export for signing by the ColdCard. The `Receive` tab is where you can generate receive address for your ColdCard without having to plug in your ColdCard and log into it. The `Addresses` tab shows several deposit and change addresses as well as any balances. The `UTXOs` tab shows any unspent transaction outputs and a small graph charting the history. Finally, the `Settings` tab is where you can detailed information about the watch-only wallet such as the master fingerprint, derivation path, & xpub.   
 
-Now you can click on the `Receive` tab on the left-hand side of the Sparrow Wallet interface. Then you will be presented with a bitcoin receiving address, a QR code, and some additional details. You can scan this QR code with your mobile Bitcoin wallet, for example, and deposit some bitcoin to your ColdCard. You should see the transaction show up in Sparrow Wallet after a moment. The transaction will remain in a pending status until it receives some blockchain confirmations. In the mean-time, you can click on the `Transactions` tab and review further details about your transaction. You can also copy/paste your transaction ID in [mempool.space](https://mempool.space/) to watch for your first confirmation, or use whatever your preferred block explorer is. [Tor Browser](https://www.torproject.org/download/) is a privacy-focused browser.  
+Now you can click on the `Receive` tab on the left-hand side of the Sparrow Wallet interface. Then you will be presented with a bitcoin receiving address, a QR code, and some additional details. You can scan this QR code with your mobile Bitcoin wallet, for example, and deposit some bitcoin to your ColdCard. You should see the transaction show up in Sparrow Wallet after a moment along with a pop-up notification. Also, in BitcoinCore, the transactions should show up there as well. The transaction will remain in a pending status until it receives some blockchain confirmations. In the mean-time, you can click on the `Transactions` tab and review further details about your transaction. You can also copy/paste your transaction ID in [mempool.space](https://mempool.space/) to watch for your first confirmation, or use whatever your preferred block explorer is. [Tor Browser](https://www.torproject.org/download/) is a privacy-focused browser.  
 
 <p align="center">
   <img width="950" height="405" src="Assets/Sparrow28.png">
@@ -228,17 +228,17 @@ Now you can click on the `Receive` tab on the left-hand side of the Sparrow Wall
 
 Now you can secure your ColdCard in a safe place until you want to sign a transaction and spend from it, several addresses will be saved so you can continue depositing to your ColdCard via Sparrow Wallet without having to re-connect it every time. It is best practice to confirm each receiving address on the ColdCard itself and also to only use each address once. 
 
-When you are ready to spend bitcoin from your ColdCard, it is necessary to create a PSBT. To do this, navigate to the "Spend" tab on the left-hand side in Sparrow Wallet. There, you can paste the address you are sending to, add a label, enter an amount to send, and choose a miners fee rate, etc. Once you have everything set, click on "Create Transaction". On the next screen, click on "Finalize Transaction for signing". 
+When you are ready to spend bitcoin from your ColdCard, it is necessary to create a PSBT. To do this, navigate to the `Spend` tab on the left-hand side in Sparrow Wallet. There, you can paste the address you are sending to, add a label, enter an amount to send, and choose a miners fee rate, etc. Once you have everything set, click on `Create Transaction`. On the next screen, click on `Finalize Transaction for signing`. 
 
 <p align="center">
-  <img width="452" height="339" src="Assets/Sparrow14.png">
-  <img width="452" height="339" src="Assets/Sparrow15.png">
+  <img width="452" height="339" src="Assets/Sparrow31.png">
+  <img width="452" height="339" src="Assets/Sparrow32.png">
   </p>
   
-Next, you will be asked to sign the transaction using your ColdCard. You can deposit bitcoin with your ColdCard disconnected but to spend bitcoin, the ColdCard needs to sign the transaction. Sparrow Wallet is used to build the transaction based on your deposits and the information you entered when constructing the transaction. Connect your ColdCard to your computer and log into it if you have not done so already, then in Sparrow Wallet click on the "Sign" button. A pop up window will display the option for ColdCard, click on the "Sign" button.
+Next, you will need to sign the transaction using your ColdCard. You can deposit bitcoin with your ColdCard disconnected but to spend bitcoin, the ColdCard needs to sign the transaction. Sparrow Wallet is used to build the transaction based on your deposits and the information you entered when constructing the transaction. Click on the `Save Transaction` button.  
 
 <p align="center">
-  <img width="452" height="339" src="Assets/Sparrow16.png">
+  <img width="452" height="339" src="Assets/Sparrow33.png">
   <img width="452" height="339" src="Assets/Sparrow17.png">
   </p>
  
