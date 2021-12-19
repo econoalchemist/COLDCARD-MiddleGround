@@ -163,21 +163,27 @@ Then click on the "Server" tab on the left-hand side. Click on the `Bitcoin Core
 
 Unfortunately, BitcoinCore stores your public keys and balance unencrypted on the computer it is running on. Although your bitcoin are not directly at risk of theft, if this computer is regularly connected to the internet, it is at risk to hackers - which has the potential to make you a target if your balance and geographic location are discovered. To learn more about Sparrow Wallet best practices, check out [this Sparrow Wallet resource](https://www.sparrowwallet.com/docs/best-practices.html) guide. 
 
-Now that Sparrow Wallet is connected with BitcoinCore, this is a good time to get the watch-only wallet file exported from the ColdCard. Then it can be imported to Sparrow Wallet. So connect your ColdCard to the ColdPower adaptor and log into the ColdCard. In order to keep your ColdCard air-gapped, the Partially Signed Bitcoin Transaction (PSBT) can be utilized to spend bitcoin from the ColdCard without ever connecting it to the internet. Basically, the public information from the ColdCard called an XPUB will be used to import the necessary information into Sparrow Wallet on our desktop. By doing this, Sparrow Wallet will be able to generate receive addresses and QR codes, monitor the ColdCard's balance, and initiate PSBT's. All without exposing any of the private information from the ColdCard, like the signing key. 
+Now that Sparrow Wallet is connected with BitcoinCore, this is a good time to get the watch-only wallet file exported from the ColdCard. Then it can be imported to Sparrow Wallet. So connect your ColdCard to the ColdPower adaptor and log into the ColdCard. 
+
+In order to keep your ColdCard air-gapped, the Partially Signed Bitcoin Transaction (PSBT) can be utilized to spend bitcoin from the ColdCard without ever connecting it to the internet. Basically, the public information from the ColdCard called an XPUB will be used to import the necessary information into Sparrow Wallet on our desktop. By doing this, Sparrow Wallet will be able to generate receive addresses and QR codes, monitor the ColdCard's balance, and initiate PSBT's. All without exposing any of the private information from the ColdCard, like the signing key. 
+
+You will use the microSD card to transfer information between the desktop and the ColdCard. Ensure the microSD card is insterted to the ColdCard. 
 
 First, the `.json` file from the ColdCard needs to be exported, which will contain all the public information necessary so that Sparrow Wallet can import this wallet. From the main menu select `Advanced` then `MicroSD Card` then `Export Wallet` then `Generic JSON`. 
 
 <p align="center">
-  <img width="400" height="300" src="Assets/IMG_5780.JPG">
-  <img width="400" height="300" src="Assets/IMG_5789.JPG">
+  <img width="400" height="352" src="Assets/IMG_5780.JPG">
+  <img width="400" height="352" src="Assets/IMG_5789.JPG">
 </p>
 
 <p align="center">
-  <img width="400" height="300" src="Assets/IMG_5798.JPG">
-  <img width="400" height="300" src="Assets/IMG_5809.JPG">
+  <img width="400" height="352" src="Assets/IMG_5798.JPG">
+  <img width="400" height="352" src="Assets/IMG_5809.JPG">
 </p>
 
-You can create your new wallet by selecting "File>New Wallet", then you will be asked to name this wallet. Name the wallet whatever you want then click on "Create Wallet". You will notice in the Sparrow Wallet interface lower right-hand corner that the color has changed to green on the toggle button. This indicates that your wallet is using your instance of BitcoinCore as the back end.
+This is going to write the file to the MicroSD card, then you can connect that MicroSD card to your desktop computer with your USB adaptor. Copy/paste the exported `.json` file to your desktop from the microSD card. Notate the file location and now you will switch back to Sparrow Wallet to get it ready to import the `.json` file. 
+
+In Sparrow Wallet, create a new wallet by selecting `File` > `New Wallet`, then you will be asked to name this wallet. Name the wallet whatever you want then click on `Create Wallet`. You will notice in the Sparrow Wallet interface lower right-hand corner that the color has changed to green on the toggle switch. This indicates that your wallet is using your instance of BitcoinCore as the back end.
 
 <p align="center">
   <img width="814" height="611" src="Assets/Sparrow22.png">
