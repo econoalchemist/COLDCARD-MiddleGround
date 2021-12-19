@@ -195,18 +195,19 @@ You will see the following screen, you can leave all the settings on the default
   <img width="814" height="611" src="Assets/Sparrow23.png">
 </p>
 
-A screen will pop up and you can click on the "Scan..." button. Then after a moment you should see ColdCard appear on screen with an "Import KeyStore" button, click on that button. 
+A screen will pop up and you can click on the `Import File...` button next to the ColdCard icon. This will open your file explorer where you can point Sparrow Wallet to the file location containing the exported ColdCard `.json` file. Select that file and click on `open`. 
 
 <p align="center">
-  <img width="452" height="339" src="Assets/Sparrow5.png">
-  <img width="452" height="339" src="Assets/Sparrow6.png">
+  <img width="452" height="339" src="Assets/Sparrow24.png">
 </p>
 
-After a moment, you will see a summary of the wallet you are about to apply. You will notice a "Master fingerprint" dialog box with 8 characters in it. You can use this unique identifier to confirm that you are importing the correct wallet from your ColdCard. On your ColdCard, from the main menu, navigate down to "Advanced>View Identity" and you can compare the displayed fingerprint to the one displayed in Sparrow Wallet. If everything looks good, then click on "Apply" in Sparrow Wallet. 
+After a moment, you will see a summary of the wallet you are about to apply. You will notice a "Master fingerprint" dialog box with 8 characters in it. You can use this unique identifier to confirm that you are importing the correct wallet from your ColdCard. On your ColdCard, from the main menu, navigate down to "Advanced>View Identity" and you can compare the displayed fingerprint to the one displayed in Sparrow Wallet. This is especially important to confirm if you have added a passphrase which will be covered in the [Paranoid guide](https://github.com/econoalchemist/ColdCard-Paranoid)
+
+If everything looks good, then click on "Apply" in Sparrow Wallet. 
 
 <p align="center">
-  <img width="814" height="611" src="Assets/Sparrow7.png">
-  <img width="814" height="350" src="Assets/Sparrow8.png">
+  <img width="814" height="611" src="Assets/Sparrow25.png">
+  <img width="814" height="350" src="Assets/Sparro26.png">
 </p>
 
 After clicking on "Apply", you will have the opportunity to add a password to your wallet. This is a password which will encrypt the Sparrow Wallet data file that is saved on your computer. This password can protect your wallet if someone else gains access to your Sparrow Wallet file. If you forget your password, you will need to create a new wallet file by repeating this whole process. 
