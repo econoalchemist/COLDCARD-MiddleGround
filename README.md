@@ -249,7 +249,7 @@ Insert the microSD card into the ColdCard. If necessary, power on your ColdCard 
 Then hit `OK` to sign. Once the file is signed it will be saved as a new file to the microSD card. You can then eject the microSD card and securely log out of your Cold Card and power it down. 
  
 <p align="center">
-  <img width="630" height=473" src="Assets/IMG_5870.JPG">
+  <img width="600" height=473" src="Assets/IMG_5870.JPG">
 </p>
 
                                                         
