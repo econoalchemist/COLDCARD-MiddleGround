@@ -241,12 +241,12 @@ To create a PSBT, navigate to the `Spend` tab on the left-hand side in Sparrow W
 Insert the microSD card into the ColdCard. If necessary, power on your ColdCard using the ColdPower 9v battery adaptor or USB adaptor. Then enter your ColdCard PIN prefix, verify your anti-phishing words, and enter the PIN suffix. From the main menu choose `Ready to Sign`. Then the details of the PSBT will be displayed and you can confirm that the address and the amount and the miners fee are correct.    
 
 <p align="center">
-  <img width="315" height="236" src="Assets/IMG_5831.JPG">
+  <img width="300" height="236" src="Assets/IMG_5831.JPG">
   <img width="315" height="236" src="Assets/IMG_5839.JPG">
-  <img width="315" height="236" src="Assets/IMG_5847.JPG">
+  <img width="300" height="236" src="Assets/IMG_5847.JPG">
   </p>
   
-Then hit OK to sign. Once the file is signed it will be saved as a new file to the microSD card. You can then eject the MicroSD card and securely log out of your Cold Card and power it down. 
+Then hit `OK` to sign. Once the file is signed it will be saved as a new file to the microSD card. You can then eject the microSD card and securely log out of your Cold Card and power it down. 
  
 <p align="center">
   <img width="630" height=473" src="Assets/IMG_5870.JPG">
