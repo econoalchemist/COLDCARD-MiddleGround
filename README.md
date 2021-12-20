@@ -125,7 +125,7 @@ In this guide you will see how to connect your ColdCard to Sparrow Wallet using 
 
 - [BitcoinCore.org](https://bitcoincore.org/en/about/)
 - [Ministry of Nodes](https://www.ministryofnodes.com.au/) 
-- [Soarrow Wallet Documentation](https://www.sparrowwallet.com/docs/connect-node.html)  
+- [Sparrow Wallet Documentation](https://www.sparrowwallet.com/docs/connect-node.html)  
 
 Once you have your BitcoinCore node ready, there are a couple steps needed to configure it to work with Sparrow Wallet. 
 
