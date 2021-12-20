@@ -121,7 +121,7 @@ Sparrow Wallet is a Bitcoin wallet designed to be connected with your own node a
 
 In this guide you will see how to connect your ColdCard to Sparrow Wallet using a your own BitcoinCore node. If you don't have your own Bitcoin node, you can use reputable public Electrum servers as demonstrated in the [UltraQuick guide](https://github.com/econoalchemist/ColdCard-UltraQuick). However, there are privacy tradeoffs that come with using the convenience of a public Electrum server. Luckily there are a number of resources avilable to help you spin up your own Bitcoin node, to learn more check out:
 
-- [Bitcoin.org](https://bitcoin.org/en/bitcoin-core/)
+- [BitcoinCore.org](https://bitcoincore.org/en/about/)
 - [Ministry of Nodes](https://www.ministryofnodes.com.au/) 
 - [Soarrow Wallet Documentation](https://www.sparrowwallet.com/docs/connect-node.html)  
 
