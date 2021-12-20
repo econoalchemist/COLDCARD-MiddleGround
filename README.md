@@ -171,7 +171,7 @@ In order to keep your ColdCard air-gapped, the Partially Signed Bitcoin Transact
 
 You will use the microSD card to transfer information between the desktop and the ColdCard. Ensure the microSD card is insterted to the ColdCard. 
 
-First, the `.json` file needs to be exported from the ColdCard, which will contain all the public information necessary so that Sparrow Wallet can import this wallet. From the ColdCard main menu select `Advanced` then `MicroSD Card` then `Export Wallet` then `Generic JSON`. 
+First, the `.json` file needs to be exported from the ColdCard, which will contain all the public information necessary so that Sparrow Wallet can import this wallet. From the ColdCard main menu select `Advanced` > `MicroSD Card` > `Export Wallet` > `Generic JSON`. 
 
 <p align="center">
   <img width="400" height="352" src="Assets/IMG_5780.JPG">
