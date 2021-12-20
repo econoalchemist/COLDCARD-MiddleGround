@@ -54,7 +54,7 @@ Once powered on, first read and accept the terms of sale & use. Then you will be
   <img width="605" height="454" src="Assets/BagNumber.jpg">
 </p>
 
-Make careful considerations with your PIN number. You don't want to use one that is easy to guess. Your PIN will have two parts, a prefix and suffix. The idea is that once you enter the prefix, you will be presented with two anti-phishing words. If the words are the same as the words that were originally presented to you at initial startup, then you know that your ColdCard has not been tampered with since the last time you accessed it. 
+Make careful considerations with your PIN number. You don't want to use one that is easy to guess. Your PIN will have two parts, a prefix and suffix. The way the PIN works after you set it all up is that once you enter the prefix, you will be presented with two anti-phishing words. If the words are the same as the original words presented to you at initial setup, then you know that your ColdCard has not been tampered with since the last time you accessed it. After confirming the anti-phishing words, you then enter the PIN siffix and if all is correct you will be permitted access to teh ColdCard. 
 
 
 First, select `Choose PIN Code`, then you will see a brief description of how the PIN code works. Each part of your PIN code can be between 2 and 6 digits. There is absolutely no way to access a forgotten or lost PIN. Also, if you enter a PIN incorrectly too many times, it will brick your ColdCard as a security feature.
