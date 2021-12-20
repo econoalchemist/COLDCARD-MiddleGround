@@ -214,7 +214,7 @@ If everything looks good, then click on <kbd>Apply</kbd> in Sparrow Wallet.
   <img width="814" height="350" src="Assets/Sparrow26.png">
 </p>
 
-After clicking on <kbd>Apply</kbd>, you will have the opportunity to add a password to your wallet. This is a password which will encrypt the Sparrow Wallet data file that is saved on your computer. This password can protect your wallet if someone else gains access to your Sparrow Wallet file. If you forget your password, you will need to create a new wallet file by repeating this whole process. 
+After clicking on <kbd>Apply</kbd>, you will have the opportunity to add a password to your wallet. This is a password which will encrypt the Sparrow Wallet data file that is saved on your computer. This password can protect your wallet if someone else gains access to your desktop and Sparrow Wallet file. If you forget your password, you will need to create a new wallet file by repeating this whole process. 
 
 <p align="center">
   <img width="814" height="611" src="Assets/Sparrow27.png">
