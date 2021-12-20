@@ -95,7 +95,7 @@ In the steps below you will see how to add some of your own entropy using a six 
   <img width="454" height="341" src="Assets/AddEntropy.jpg">
 </p>
 
-Entropy is calculated by using: `log2(6) = 2.58`. Where the `6` is the number of sides on the dice. For reference, it would take the world's most powerful super computer trillions of years to brute force a 256 bit key. So roll the dice and enter the corresponding number for each roll. Repeat this process as much as you want. If you roll less than 50 times then the ColdCard will add the remaining necessary entropy with the TRNG. Then hit <kbd>OK</kbd>.
+Entropy is calculated by using: `log2(6) = 2.58`. Where the `6` is the number of sides on the dice. For reference, it would take the world's most powerful supercomputer trillions of years to brute force a 256 bit key. So roll the dice and enter the corresponding number for each roll. Repeat this process as much as you want. If you roll less than 50 times then the ColdCard will add the remaining necessary entropy with the TRNG. Then hit <kbd>OK</kbd>.
 
 <p align="center">
   <img width="804" height="605" src="Assets/ZeroRolls.jpg">
@@ -121,7 +121,7 @@ Your ColdCard is ready to start receiving deposits, next we'll set it up as a "w
 ## Air-gapped communication & transacting with Sparrow Wallet
 Sparrow Wallet is a Bitcoin wallet designed to be connected with your own node and ran from your desktop or laptop computer. This is a user-friendly wallet with an intuitive interface and many advanced features for a range of capabilities. To learn more about Sparrow Wallet and for installation instructions, visit the [Sparrow Wallet website](https://www.sparrowwallet.com/).
 
-In this guide you will see how to connect your ColdCard to Sparrow Wallet using a your own BitcoinCore node. If you don't have your own Bitcoin node, you can use reputable public Electrum servers as demonstrated in the [UltraQuick guide](https://github.com/econoalchemist/ColdCard-UltraQuick). However, there are privacy tradeoffs that come with using the convenience of a public Electrum server. Luckily there are a number of resources avilable to help you spin up your own Bitcoin node, to learn more check out:
+In this guide you will see how to connect your ColdCard to Sparrow Wallet using your own BitcoinCore node. If you don't have your own Bitcoin node, you can use reputable public Electrum servers as demonstrated in the [UltraQuick guide](https://github.com/econoalchemist/ColdCard-UltraQuick). However, there are privacy tradeoffs that come with using the convenience of a public Electrum server. Luckily there are a number of resources available to help you spin up your own Bitcoin node, to learn more check out:
 
 - [BitcoinCore.org](https://bitcoincore.org/en/about/)
 - [Ministry of Nodes](https://www.ministryofnodes.com.au/) 
@@ -129,7 +129,7 @@ In this guide you will see how to connect your ColdCard to Sparrow Wallet using 
 
 Once you have your BitcoinCore node ready, there are a couple steps needed to configure it to work with Sparrow Wallet. 
 
-If you have BitcoinCore running on the same computer as Sparrow Wallet, then all you need to do is open the `bitcoin.conf` configuration file and add `server=1` near the top and save it. Then re-launch BitcoinCore. You may have a blank configuration file if this was a new BitcoinCore install and that is fine.  
+If you have BitcoinCore running on the same computer as Sparrow Wallet, then all you need to do is open the `bitcoin.conf` configuration file and add `server=1` near the top and save it. Then relaunch BitcoinCore. You may have a blank configuration file if this was a new BitcoinCore install and that is fine.  
 
 Alternatively, if you are running BircoinCore on a remote computer, you need to add a username & password and the Remote Procedure Calls (RPC) binding local IP addresses in the configuration file. To do this, navigate to the `bitcoin.conf` configuration file and open it in your preferred text editor. Then add the local IP address for your node and the local IP address for your desktop. For example:
 
@@ -149,7 +149,7 @@ Alternatively, if you are running BircoinCore on a remote computer, you need to 
   <img width="605" height="378" src="Assets/Sparrow20.png">
 </p>
 
-Save those changes and then you should be able to conect to your BircoinCore node from your computer on the same local network. Make sure you restart BitcoinCore after saving those changes. 
+Save those changes and then you should be able to connect to your BircoinCore node from your computer on the same local network. Make sure you restart BitcoinCore after saving those changes. 
 
 Now you are ready to configure Sparrow Wallet to talk to your BitcoinCore node. Once you have Sparrow Wallet installed and launched, you will be presented with an empty user interface. Navigate to `File` > `Preferences`.
 
@@ -163,13 +163,13 @@ Then click on the <kbd>Server</kbd> tab on the left-hand side. Click on the <kbd
   <img width="752" height="662" src="Assets/Sparrow21.png">
 </p>
 
-Unfortunately, BitcoinCore stores your public keys and balance unencrypted on the computer it is running on. Although your bitcoin are not directly at risk of theft, if this computer is regularly connected to the internet, it is at risk to hackers - which has the potential to make you a target if your balance and geographic location are discovered. To learn more about Sparrow Wallet best practices, check out [this Sparrow Wallet resource](https://www.sparrowwallet.com/docs/best-practices.html) guide. 
+Unfortunately, BitcoinCore stores your public keys and balances unencrypted on the computer it is running on. Although your bitcoin are not directly at risk of theft, if this computer is regularly connected to the internet, it is at risk to hackers - which has the potential to make you a target if your balance and geographic location are discovered. To learn more about Sparrow Wallet best practices, check out [this Sparrow Wallet resource](https://www.sparrowwallet.com/docs/best-practices.html) guide. 
 
 Now that Sparrow Wallet is connected with BitcoinCore, this is a good time to get the watch-only wallet file exported from the ColdCard. Then it can be imported to Sparrow Wallet. So connect your ColdCard to the ColdPower adaptor and log into the ColdCard. 
 
 In order to keep your ColdCard air-gapped, the Partially Signed Bitcoin Transaction (PSBT) can be utilized to spend bitcoin from the ColdCard without ever connecting it to the internet. Basically, the public information from the ColdCard called an XPUB will be used to import the necessary information into Sparrow Wallet on our desktop. By doing this, Sparrow Wallet will be able to generate receive addresses and QR codes, monitor the ColdCard's balance, and initiate PSBT's. All without exposing any of the private information from the ColdCard, like the signing key. 
 
-You will use the microSD card to transfer information between the desktop and the ColdCard. Ensure the microSD card is insterted to the ColdCard. 
+You will use the microSD card to transfer information between the desktop and the ColdCard. Ensure the microSD card is inserted to the ColdCard. 
 
 First, the `.json` file needs to be exported from the ColdCard, which will contain all the public information necessary so that Sparrow Wallet can import this watch-only wallet. From the ColdCard main menu select `Advanced` > `MicroSD Card` > `Export Wallet` > `Generic JSON`. 
 
@@ -230,7 +230,7 @@ Now you can click on the <kbd>Receive</kbd> tab on the left-hand side of the Spa
   <img width="950" height="399" src="Assets/Sparrow30.png">
   </p>
 
-Now you can power off and secure your ColdCard in a safe place until you want to sign a transaction and spend from it, several addresses will be cataloged in Sparrow Wallet so you can continue depositing to your ColdCard via Sparrow Wallet without having to re-connect it every time. It is best practice to confirm each receiving address on the ColdCard itself and also to only use each address once. 
+Now you can power off and secure your ColdCard in a safe place until you want to sign a transaction and spend from it, several addresses will be cataloged in Sparrow Wallet so you can continue depositing to your ColdCard via Sparrow Wallet without having to reconnect it every time. It is best practice to confirm each receiving address on the ColdCard itself and also to only use each address once. 
 
 When you are ready to sign a transaction to spend bitcoin, it is necessary to create a PSBT in order to maintain the air-gapped benefit. You can deposit bitcoin with your ColdCard disconnected but to spend bitcoin, the ColdCard needs to sign the transaction. Sparrow Wallet is used to build the transaction based on your available Unspent Transaction Outputs (UTXOs) and the information you enter when constructing the transaction. The PSBT details are passed between Sparrow Wallet and the ColdCard using the microSD card. 
 
@@ -272,7 +272,7 @@ At the time of broadcast you should see the transaction in BitcoinCore as well a
 The main point here is that your ColdCard is the required signing device while your Sparrow Wallet is your interface, transaction builder, & broadcaster. In this configuration, Sparrow Wallet can do many things like catalog addresses and build transactions but without the signature from your ColdCard, Sparrow Wallet cannot authorize spending of any of your bitcoin. 
 
 ## Backup recommendations
-Careful considerations should be made in regards to how the wallet backup information will be stored. The information required for a proper backup varies depending on how the wallet was setup. These requirements may be only 24-words for a simple wallet or the requirements can include 24-words, a passphrase, master fingerprint, derivation path, and more. There are several options when it comes to picking a stoage medium, each has it's own set of tradeoffs. Writing the 24-words on paper is a good start and helps mitigate the risks associated with having a digital copy of the backup information. With the backup information written down on paper, an adversary would need physical access to the paper in order to retrieve the information. Where as a photo, text file, or other digital medium can be copied and replicated and shared quickly. 
+Careful considerations should be made in regards to how the wallet backup information will be stored. The information required for a proper backup varies depending on how the wallet was setup. These requirements may be only 24-words for a simple wallet or the requirements can include 24-words, a passphrase, master fingerprint, derivation path, and more. There are several options when it comes to picking a storage medium, each has its own set of tradeoffs. Writing the 24-words on paper is a good start and helps mitigate the risks associated with having a digital copy of the backup information. With the backup information written down on paper, an adversary would need physical access to the paper in order to retrieve the information. Where as a photo, text file, or other digital medium can be copied and replicated and shared quickly. 
 
 The trade off with paper backups is that they do not withstand fire or flooding very well. This is where steel backups come into play. Robust backups made from stainless steel can withstand fire temperatures beyond the range of a typical house fire, up to 1,500°C. Also stainless steel backups can withstand being submerged in water for extended periods of time. There is a wide range of steel backups available. CoinKite offers the [SeedPlate](http://bitcoinseedbackup.com/) which gives users a robust backup option that is resistant to fire and flooding as well as easy to conceal.   
 
@@ -281,7 +281,7 @@ The trade off with paper backups is that they do not withstand fire or flooding 
   <img width="950" height="713" src="Assets/IMG_6688.JPG">
 </p>
 
-These stainless steel plates are etched with a grid on both sides. The grid contains the alphabet along the Y-axis and 48-columns along the X-axis. The 48-columns are split into 12 groups of 4-columns. Each of the 12-groups has enough room for 4-letters. Only the first 4-letters of each BIP39 seed word is required in order to restore the wallet as no two words on the BIP39 word listshare the same sequence of the first 4-letters. 
+These stainless steel plates are etched with a grid on both sides. The grid contains the alphabet along the Y-axis and 48-columns along the X-axis. The 48-columns are split into 12 groups of 4-columns. Each of the 12-groups has enough room for 4-letters. Only the first 4-letters of each BIP39 seed word is required in order to restore the wallet as no two words on the BIP39 word list share the same sequence of the first 4-letters. 
 
 Use a marker to indicate the first 4-letters of the first 12-words on one side of the plate and then flip the plate over and repeat the process for the 13th through 24th words. Double check your work then use a spring-loaded punch to stamp the plate on each mark.
 
