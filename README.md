@@ -131,7 +131,7 @@ Once you have your BitcoinCore node ready, there are a couple steps needed to co
 
 If you have BitcoinCore running on the same computer as Sparrow Wallet, then all you need to do is open the `bitcoin.conf` configuration file and add `server=1` near the top and save it. Then re-launch BitcoinCore. You may have a blank configuration file if this was a new BitcoinCore install and that is fine.  
 
-Alternatively, if you are running BircoinCore on a remote computer, you need to add a username & password and the Remote Procedure Calls (RPC) binding local IP addresses in the configuration file. To do this, navigate to the `bitcoin.conf` configuration file and open it. Then add the local IP address for your node and the local IP address for your desktop. For example:
+Alternatively, if you are running BircoinCore on a remote computer, you need to add a username & password and the Remote Procedure Calls (RPC) binding local IP addresses in the configuration file. To do this, navigate to the `bitcoin.conf` configuration file and open it in your preferred text editor. Then add the local IP address for your node and the local IP address for your desktop. For example:
 
 `rpcuser=pi`
 
