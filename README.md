@@ -25,7 +25,7 @@ Upon receiving your ColdCard, ensure that the tamper-evident bag has not been co
   <img width="400" height="300" src="Assets/Bag3.png">
 </p>
 
-You will see the tamper-evident words "void" appear when the seal is opened. Inside you will find your new ColdCard, the Wallet Recovery Backup Card, sticker(s), and an additional copy of the bag number which should match the bag number printed on the outside of the bag. 
+You will see the tamper-evident words "VOID" appear when the seal is opened. Inside you will find your new ColdCard, the Wallet Recovery Backup Card, sticker(s), and an additional copy of the bag number which should match the bag number printed on the outside of the bag. 
 
 <p align="center">
   <img width="388" height="208" src="Assets/IMG_6079.JPG">
@@ -57,13 +57,13 @@ Once powered on, first read and accept the terms of sale & use. Then you will be
 Make careful considerations with your PIN number. You don't want to use one that is easy to guess. Your PIN will have two parts, a prefix and suffix. The idea is that once you enter the prefix, you will be presented with two anti-phishing words. If the words are the same as the words that were originally presented to you at initial startup, then you know that your ColdCard has not been tampered with since the last time you accessed it. 
 
 
-First, select "Choose PIN Code", then you will see a brief description of how the PIN code works. Each part of your PIN code can be between 2 and 6 digits. There is absolutely no way to access a forgotten or lost PIN. Also, if you enter a PIN incorrectly too many times, it will brick your ColdCard as a security feature.
+First, select `Choose PIN Code`, then you will see a brief description of how the PIN code works. Each part of your PIN code can be between 2 and 6 digits. There is absolutely no way to access a forgotten or lost PIN. Also, if you enter a PIN incorrectly too many times, it will brick your ColdCard as a security feature.
 
 <p align="center">
   <img width="605" height="454" src="Assets/Choose PIN.jpg">
 </p>
 
-After hitting `OK` you will get one more warning about the risk of losing or forgetting your PIN. After reading that, you can enter your PIN prefix. Use the included notecard to write down your PIN prefix then hit `OK`. 
+After hitting <kbd>OK</kbd> you will get one more warning about the risk of losing or forgetting your PIN. After reading that, you can enter your PIN prefix. Use the included notecard to write down your PIN prefix then hit <kbd>OK</kbd>. 
 
 <p align="center">
   <img width="454" height="341" src="Assets/EnterPreFix.jpg">
@@ -76,7 +76,7 @@ Next you will be presented with your two anti-phishing words. Write these down o
   <img width="605" height="454" src="Assets/AntiPhishingWords.jpg">
 </p>
 
-Next, enter your PIN suffix, then write it down on the notecard and hit `OK`.
+Next, enter your PIN suffix, then write it down on the notecard and hit <kbd>OK</kbd>.
 
 <p align="center">
   <img width="454" height="341" src="Assets/EnterSuffix.jpg">
@@ -88,20 +88,20 @@ Then you will be asked to re-enter your PIN prefix, confirm the two anti-phishin
 ## Generating a seed phrase
 There are a couple considerations you may want to make when creating a seed phrase. For example, ColdCard will generate a seed phrase for you by default, as shown in the [Ultra Quick guide](https://github.com/econoalchemist/ColdCard-UltraQuick). However, maybe you don't trust the True Random Number Generator (TRNG) in your ColdCard, you can introduce some of your own randomness using a six sided dice and combine that with the ColdCard's TRNG entropy. If you still don't trust the ColdCard is doing what it purports to be doing then you can generate a full 128 or 256 bits of entropy with dice rolls and even verify the dice roll math as shown in the [Paranoid guide](https://github.com/econoalchemist/ColdCard-Paranoid).
 
-In the steps below you will see how to add some of your own entropy using a six sided dice combined with the TRNG entropy from the ColdCard to generate your seed phrase. After setting up the PIN, you should be at the ColdCard main menu. Select "New Wallet" and after a moment you will be presented with 24 words. However, to add some of your own dice roll randomness, scroll down to the bottom of the word list and select "4" to add some dice rolls.
+In the steps below you will see how to add some of your own entropy using a six sided dice combined with the TRNG entropy from the ColdCard to generate your seed phrase. After setting up the PIN, you should be at the ColdCard main menu. Select `New Wallet` and after a moment you will be presented with 24 words. However, to add some of your own dice roll randomness, scroll down to the bottom of the word list and select <kbd>4</kbd> to add some dice rolls.
 
 <p align="center">
   <img width="454" height="341" src="Assets/NewWallet.jpg">
   <img width="454" height="341" src="Assets/AddEntropy.jpg">
 </p>
 
-Entropy is calculated by using: log2(6) = 2.58. Where the 6 is the number of sides on the dice. For reference, it would take the world's most powerful super computer trillions of years to brute force a 256 bit key. So roll the dice and enter the corresponding number for each roll. Repeat this process as much as you want. If you roll less than 50 times then the ColdCard will add the remaining necessary entropy with the TRNG. Then hit "OK".
+Entropy is calculated by using: `log2(6) = 2.58`. Where the `6` is the number of sides on the dice. For reference, it would take the world's most powerful super computer trillions of years to brute force a 256 bit key. So roll the dice and enter the corresponding number for each roll. Repeat this process as much as you want. If you roll less than 50 times then the ColdCard will add the remaining necessary entropy with the TRNG. Then hit <kbd>OK</kbd>.
 
 <p align="center">
   <img width="804" height="605" src="Assets/ZeroRolls.jpg">
 </p>  
 
-Now you will be presented with a new list of 24 words. Write these words down on your notecard. Then double check your work. 
+Now you will be presented with a new list of 24-words. Write these words down on your notecard. Then double check your work. 
 
 <p align="center">
   <img width="454" height="341" src="Assets/SaveWords1.jpg">
@@ -149,13 +149,13 @@ Alternatively, if you are running BircoinCore on a remote computer, you need to 
 
 Save those changes and then you should be able to conect to your BircoinCore node from your computer on the same local network. Make sure you restart BitcoinCore after saving those changes. 
 
-Now you are ready to configure Sparrow Wallet to talk to your BitcoinCore node. Once you have Sparrow Wallet installed and launched, you will be presented with an empty user interface. Navigate to "File>Preferences".
+Now you are ready to configure Sparrow Wallet to talk to your BitcoinCore node. Once you have Sparrow Wallet installed and launched, you will be presented with an empty user interface. Navigate to `File` > `Preferences`.
 
 <p align="center">
   <img width="814" height="611" src="Assets/Sparrow0.png">
 </p>
 
-Then click on the "Server" tab on the left-hand side. Click on the `Bitcoin Core` tab for the Server Type. If running BitcoinCore on the same computer, use the `127.0.0.1` rpcbind IP address with `8332` as the port and the default authentication option. Or if running BitcoinCore on a different computer, use the same User/Pass that you entered in the `bitcoin.conf` file. Either way, set the Data Folder directory to the same folder the `bitcoin.conf` file is being written. This should be the same directory that BitcoinCore writes the `.cookie` file that Sparrow Wallet needs to read. Test the network connection from Sparrow Wallet. If it’s good, you should see the green check mark next to "Test Connection" and some information populated in the dialog box below that. Then you can close that window.   
+Then click on the <kbd>Server</kbd> tab on the left-hand side. Click on the <kbd>Bitcoin Core</kbd> tab for the Server Type. If running BitcoinCore on the same computer, use the `127.0.0.1` rpcbind IP address with `8332` as the port and the default authentication option. Or if running BitcoinCore on a different computer, use the same User/Pass that you entered in the `bitcoin.conf` file. Either way, set the Data Folder directory to the same folder the `bitcoin.conf` file is being written. This should be the same directory that BitcoinCore writes the `.cookie` file that Sparrow Wallet needs to read. Test the network connection from Sparrow Wallet. If it’s good, you should see the green check mark next to <kbd>Test Connection</kbd> and some information populated in the dialog box below that. Then you can close that window.   
 
 <p align="center">
   <img width="752" height="662" src="Assets/Sparrow21.png">
@@ -183,42 +183,42 @@ First, the `.json` file from the ColdCard needs to be exported, which will conta
 
 This is going to write the file to the MicroSD card, then you can connect that MicroSD card to your desktop computer with your USB adaptor. Copy/paste the exported `.json` file to your desktop from the microSD card. Notate the file location and now you will switch back to Sparrow Wallet to get it ready to import the `.json` file. 
 
-In Sparrow Wallet, create a new wallet by selecting `File` > `New Wallet`, then you will be asked to name this wallet. Name the wallet whatever you want then click on `Create Wallet`. You will notice in the Sparrow Wallet interface lower right-hand corner that the color has changed to green on the toggle switch. This indicates that your wallet is using your instance of BitcoinCore as the back end.
+In Sparrow Wallet, create a new wallet by selecting `File` > `New Wallet`, then you will be asked to name this wallet. Name the wallet whatever you want then click on <kbd>Create Wallet</kbd>. You will notice in the Sparrow Wallet interface lower right-hand corner that the color has changed to green on the toggle switch. This indicates that your wallet is using your instance of BitcoinCore as the back end.
 
 <p align="center">
   <img width="814" height="611" src="Assets/Sparrow22.png">
 </p>
 
-You will see the following screen, you can leave all the settings on the defaults. Then select `Airgapped Hardware Wallet`. 
+You will see the following screen, you can leave all the settings on the defaults. Then select <kbd>Airgapped Hardware Wallet</kbd>. 
 
 <p align="center">
   <img width="814" height="611" src="Assets/Sparrow23.png">
 </p>
 
-A screen will pop up and you can click on the `Import File...` button next to the ColdCard icon. This will open your file explorer where you can point Sparrow Wallet to the file location containing the exported ColdCard `.json` file. Select that file and click on `open`. 
+A screen will pop up and you can click on the <kbd>Import File...</kbd> button next to the ColdCard icon. This will open your file explorer where you can point Sparrow Wallet to the file location containing the exported ColdCard `.json` file. Select that file and click on <kbd>open</kbd>. 
 
 <p align="center">
   <img width="452" height="339" src="Assets/Sparrow24.png">
 </p>
 
-After a moment, you will see a summary of the wallet you are about to apply. You will notice a "Master fingerprint" dialog box with 8 characters in it. You can use this unique identifier to confirm that you are importing the correct wallet from your ColdCard. On your ColdCard, from the main menu, navigate down to "Advanced>View Identity" and you can compare the displayed fingerprint to the one displayed in Sparrow Wallet. This is especially important to confirm if you have added a passphrase which will be covered in the [Paranoid guide](https://github.com/econoalchemist/ColdCard-Paranoid)
+After a moment, you will see a summary of the wallet you are about to apply. You will notice a "Master fingerprint" dialog box with 8 characters in it. You can use this unique identifier to confirm that you are importing the correct wallet from your ColdCard. On your ColdCard, from the main menu, navigate down to `Advanced` > `View Identity` and you can compare the displayed fingerprint to the one displayed in Sparrow Wallet. This is especially important to confirm if you have added a passphrase which will be covered in the [Paranoid guide](https://github.com/econoalchemist/ColdCard-Paranoid)
 
-If everything looks good, then click on `Apply` in Sparrow Wallet. 
+If everything looks good, then click on <kbd>Apply</kbd> in Sparrow Wallet. 
 
 <p align="center">
   <img width="814" height="611" src="Assets/Sparrow25.png">
   <img width="814" height="350" src="Assets/Sparrow26.png">
 </p>
 
-After clicking on `Apply`, you will have the opportunity to add a password to your wallet. This is a password which will encrypt the Sparrow Wallet data file that is saved on your computer. This password can protect your wallet if someone else gains access to your Sparrow Wallet file. If you forget your password, you will need to create a new wallet file by repeating this whole process. 
+After clicking on <kbd>Apply</kbd>, you will have the opportunity to add a password to your wallet. This is a password which will encrypt the Sparrow Wallet data file that is saved on your computer. This password can protect your wallet if someone else gains access to your Sparrow Wallet file. If you forget your password, you will need to create a new wallet file by repeating this whole process. 
 
 <p align="center">
   <img width="814" height="611" src="Assets/Sparrow27.png">
 </p>
 
-After applying the changes, you can now navigate through your watch-only wallet in Sparrow Wallet. On the left-hand side of the Sparrow Wallet interface there are six tabs. The `Transactions` tab is where you can see information related to the transactions in this watch-only wallet. The `Send` tab is where you can create the PSBTs to then export for signing by the ColdCard. The `Receive` tab is where you can generate receive address for your ColdCard without having to plug in your ColdCard and log into it. The `Addresses` tab shows several deposit and change addresses as well as any balances. The `UTXOs` tab shows any unspent transaction outputs and a small graph charting the history. Finally, the `Settings` tab is where you can detailed information about the watch-only wallet such as the master fingerprint, derivation path, & xpub.   
+After applying the changes, you can now navigate through your watch-only wallet in Sparrow Wallet. On the left-hand side of the Sparrow Wallet interface there are six tabs. The <kbd>Transactions</kbd> tab is where you can see information related to the transactions in this watch-only wallet. The <kbd>Send</kbd> tab is where you can create the PSBTs to then export for signing by the ColdCard. The <kbd>Receive</kbd> tab is where you can generate receive address for your ColdCard without having to plug in your ColdCard and log into it. The <kbd>Addresses</kbd> tab shows several deposit and change addresses as well as any balances. The <kbd>UTXOs</kbd> tab shows any unspent transaction outputs and a small graph charting the history. Finally, the <kbd>Settings</kbd> tab is where you can detailed information about the watch-only wallet such as the master fingerprint, derivation path, & xpub.   
 
-Now you can click on the `Receive` tab on the left-hand side of the Sparrow Wallet interface. Then you will be presented with a bitcoin receiving address, a QR code, and some additional details. You can scan this QR code with your mobile Bitcoin wallet, for example, and deposit some bitcoin to your ColdCard. You should see the transaction show up in Sparrow Wallet after a moment along with a pop-up notification. Also, in BitcoinCore, the transactions should show up there as well. The transaction will remain in a pending status until it receives some blockchain confirmations. In the mean-time, you can click on the `Transactions` tab and review further details about your transaction. You can also copy/paste your transaction ID in [mempool.space](https://mempool.space/) to watch for your first confirmation, or use whatever your preferred block explorer is. [Tor Browser](https://www.torproject.org/download/) is a privacy-focused browser.  
+Now you can click on the <kbd>Receive</kbd> tab on the left-hand side of the Sparrow Wallet interface. Then you will be presented with a bitcoin receiving address, a QR code, and some additional details. You can scan this QR code with your mobile Bitcoin wallet, for example, and deposit some bitcoin to your ColdCard. You should see the transaction show up in Sparrow Wallet after a moment along with a pop-up notification. Also, in BitcoinCore, the transactions should show up there as well. The transaction will remain in a pending status until it receives some blockchain confirmations. In the mean-time, you can click on the <kbd>Transactions</kbd> tab and review further details about your transaction. You can also copy/paste your transaction ID in [mempool.space](https://mempool.space/) to watch for your first confirmation, or use whatever your preferred block explorer is. [Tor Browser](https://www.torproject.org/download/) is a privacy-focused browser.  
 
 <p align="center">
   <img width="950" height="405" src="Assets/Sparrow28.png">
@@ -230,7 +230,7 @@ Now you can secure your ColdCard in a safe place until you want to sign a transa
 
 When you are ready to spend bitcoin from your ColdCard air-gapped, it is necessary to create a PSBT. You can deposit bitcoin with your ColdCard disconnected but to spend bitcoin, the ColdCard needs to sign the transaction. Sparrow Wallet is used to build the transaction based on your deposits and the information you entered when constructing the transaction. 
 
-To create a PSBT, navigate to the `Spend` tab on the left-hand side in Sparrow Wallet. There, you can paste the address you are sending to, add a label, enter an amount to send, and choose a miners fee rate, etc. Once you have everything set, click on `Create Transaction`. On the next screen, double check the details then click on `Finalize Transaction for signing`. Then you will be asked what you want to do with the finalized PSBT. In this case, click on `Save Transaction` and Sparrow Wallet will launch the file explorer. Navigate to the microSD card and save the PSBT there. Then safely eject the microSD card.  
+To create a PSBT, navigate to the <kbd>Spend</kbd> tab on the left-hand side in Sparrow Wallet. There, you can paste the address you are sending to, add a label, enter an amount to send, and choose a miners fee rate, etc. Once you have everything set, click on <kbd>Create Transaction</kbd>. On the next screen, double check the details then click on <kbd>Finalize Transaction for signing</kbd>. Then you will be asked what you want to do with the finalized PSBT. In this case, click on <kbd>Save Transaction</kbd> and Sparrow Wallet will launch the file explorer. Navigate to the microSD card and save the PSBT there. Then safely eject the microSD card.  
 
 <p align="center">
   <img width="315" height="225" src="Assets/Sparrow31.png">
@@ -246,13 +246,13 @@ Insert the microSD card into the ColdCard. If necessary, power on your ColdCard 
   <img width="300" height="236" src="Assets/IMG_5847.JPG">
   </p>
   
-Then hit `OK` to sign. Once the file is signed it will be saved as a new file to the microSD card. You can then eject the microSD card and securely log out of your Cold Card and power it down. 
+Then hit <kbd>OK</kbd> to sign. Once the file is signed it will be saved as a new file to the microSD card. You can then eject the microSD card and securely log out of your Cold Card and power it down. 
  
 <p align="center">
-  <img width="600" height=473" src="Assets/IMG_5870.JPG">
+  <img width="600" height="473" src="Assets/IMG_5870.JPG">
 </p>
 
-Eject the microSD card from the ColdCard, insert to the USB adaptor, insert the adaptor into the desktop computer. Ensure BitcoinCore and Sparrow Wallet are open. Then from the file explorer, simply double click on the signed PSBT file and it should open automatically in Sparrow Wallet. Alternatively, from Sparrow Wallet navigate to `File` > `Open Transaction` then choose `File` from the menu of options and navigate to the file location of the signed PSBT. Either way, then click on the `Broadcast Transaction` button to send the signed transaction to the Bitcoin Network. 
+Eject the microSD card from the ColdCard, insert to the USB adaptor, insert the adaptor into the desktop computer. Ensure BitcoinCore and Sparrow Wallet are open. Then from the file explorer, simply double-click on the signed PSBT file and it should open automatically in Sparrow Wallet. Alternatively, from Sparrow Wallet navigate to `File` > `Open Transaction` then choose `File` from the menu of options and navigate to the file location of the signed PSBT. Either way, then click on the <kbd>Broadcast Transaction</kbd> button to send the signed transaction to the Bitcoin Network. 
 
 <p align="center">
   <img width="814" height="256" src="Assets/Sparrow34.png">
