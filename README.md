@@ -9,7 +9,7 @@ This guide covers:
 - Checking the tamper-evident bag
 - Setting up a PIN
 - Generating a seed phrase with some dice rolls
-- Air-gapped communication & transactions with [Sparrow Wallet](https://www.sparrowwallet.com/)
+- Air-gapped communication & transacting with [Sparrow Wallet](https://www.sparrowwallet.com/)
 - Backup recommendations
 
 ## Checking the tamper-evident bag:
@@ -116,7 +116,7 @@ Next, you will be asked to take a test to prove you wrote the words down correct
 
 After passing the test, you will be at the ColdCard's main menu. Your ColdCard is ready to start receiving deposits, next we'll set it up as a "watch-only" wallet in Sparrow Wallet and demonstrate how to transact in an air-gapped fashion. If you are interested in adding the additional security of a passphrase to your ColdCard wallet, then check out the [Paranoid guide](https://github.com/econoalchemist/ColdCard-Paranoid).
 
-## Connecting ColdCard to Sparrow Wallet
+## Air-gapped communication & transacting with Sparrow Wallet
 Sparrow Wallet is a Bitcoin wallet designed to be connected with your own node and ran from your desktop or laptop computer. This is a user-friendly wallet with an intuitive interface and many advanced features for a range of capabilities. To learn more about Sparrow Wallet and for installation instructions, visit the [Sparrow Wallet website](https://www.sparrowwallet.com/).
 
 In this guide you will see how to connect your ColdCard to Sparrow Wallet using a your own BitcoinCore node. If you don't have your own Bitcoin node, you can use reputable public Electrum servers as demonstrated in the [UltraQuick guide](https://github.com/econoalchemist/ColdCard-UltraQuick). However, there are privacy tradeoffs that come with using the convenience of a public Electrum server. Luckily there are a number of resources avilable to help you spin up your own Bitcoin node, to learn more check out:
