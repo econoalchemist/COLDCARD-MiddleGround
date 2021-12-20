@@ -34,13 +34,13 @@ You will see the tamper-evident words "VOID" appear when the seal is opened. Ins
 
 If everything looks good, then you are ready to power on your new ColdCard and get it setup. 
 
-## Setting up a PIN
 Here is a diagram you can reference to learn the ColdCard's navigation:
 
 <p align="center">
   <img width="853" height="505" src="Assets/Navigation.png">
 </p>
 
+## Setting up a PIN
 A great security feature of the ColdCard is that it can be used completely air-gapped. Meaning that you never have to connect it to a computer, although that option is there if you choose to use it. You can use a standard USB outlet transformer or even a 9v battery with the ColdPower adaptor, which CoinKite offers [here](https://store.coinkite.com/store/cldpwr). To power on the ColdCard simply connect a USB to micro-USB [cable](https://store.coinkite.com/store/category/accessories) to the port on top of the ColdCard and the other end to a USB port on your ColdPower adaptor & 9v battery.
 
 <p align="center">
