@@ -293,4 +293,4 @@ Use a marker to indicate the first 4-letters of the first 12-words on one side o
 Now you have a robust stainless steel backup that can withstand fire and flood. This backup plate is easy to conceal measuring in at 127mm X 76mm x 1.5mm so that it can be hidden in a variety of places and environments. 
 
 ## Conclusion
-That is all for this guide
+That is all for this guide. You should have the knowledge now to check your tamper-evident bag, setup a PIN, create & backup a seed phrase created with some of your own randomness, as well how to import a watch-only wallet to Sparrow wallet and make some air-gapped transactions, and have some ideas about steel backup solutions. Both ColdCard and Sparrow Wallet have more advanced features which you can learn about in the [Paranoid](https://www.github.com/econoalchemist/ColdCard-Paranoid/) guide. Be sure to power down your ColdCard, disconnect it, and secure it in a safe place and keep your backup information in a separate location.   
