@@ -101,7 +101,7 @@ Entropy is calculated by using: `log2(6) = 2.58`. Where the `6` is the number of
   <img width="804" height="605" src="Assets/ZeroRolls.jpg">
 </p>  
 
-Now you will be presented with a new list of 24-words. Write these words down on your notecard. Then double check your work. 
+Now you will be presented with a new list of 24-words. Write these words down in order on your notecard. Then double check your work. 
 
 <p align="center">
   <img width="454" height="341" src="Assets/SaveWords1.jpg">
