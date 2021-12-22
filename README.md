@@ -95,7 +95,7 @@ In the steps below you will see how to add some of your own entropy using a six 
   <img width="454" height="341" src="Assets/AddEntropy.jpg">
 </p>
 
-Entropy is calculated by using: `log2(6) = 2.58`. Where the `6` is the number of sides on the dice. For reference, it would take the world's most powerful supercomputer trillions of years to brute force a 256 bit key. So roll the dice and enter the corresponding number for each roll. Repeat this process as much as you want. If you roll less than 50 times then the ColdCard will add the remaining necessary entropy with the TRNG. Then hit <kbd>OK</kbd>.
+Each 6-sided dice roll gives you an additional 2.58 bits of entropy `(log2(6))`. For reference, it would take the world's most powerful supercomputer trillions of years to brute force a 256 bit key. The COLDCARD's TRNG has already picked 256 random bits at this point, but when you roll more, each time you are adding 2.58 bits of entropy on top of those bits. So roll the dice and enter the corresponding number for each roll. Repeat this process as much as you want. If you roll less than 50 times then the ColdCard will add the remaining necessary entropy with the TRNG. Then hit <kbd>OK</kbd>.
 
 <p align="center">
   <img width="804" height="605" src="Assets/ZeroRolls.jpg">
