@@ -287,7 +287,7 @@ Use a marker to indicate the first 4-letters of the first 12-words on one side o
 
 <p align="center">
   <img width="950" height="713" src="Assets/IMG_6689.JPG">
-  <img width="950" height="6713" src="Assets/IMG_6692.JPG">
+  <img width="950" height="713" src="Assets/IMG_6692.JPG">
 </p>
 
 Now you have a robust stainless steel backup that can withstand fire and flood. This backup plate is easy to conceal measuring in at 127mm X 76mm x 1.5mm so that it can be hidden in a variety of places and environments. 
