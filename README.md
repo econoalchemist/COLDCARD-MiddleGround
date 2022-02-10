@@ -2,7 +2,7 @@
 A middle ground guide for intermediate users to get started with a secure air-gapped cold storage wallet and a private desktop wallet. 
 
 <p align="center">
-  <img width="750" height="406" src="Assets/MiddleGroundTitleImage-M.png">
+  <img width="750" src="Assets/MiddleGroundTitleImage-M.png">
 </p>
 
 This guide covers:
